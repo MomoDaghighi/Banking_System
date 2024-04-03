@@ -1,0 +1,26 @@
+<% layout('layout') %>
+    <div class="jumbotron">
+        <h1 class="display-4">Welcome to Internet Banking</h1>
+        <p class="lead">Your reliable partner in digital banking solutions.</p>
+        <hr class="my-4">
+        <p>Access your accounts securely and manage your finances online.</p>
+        <% if (!user) { %>
+            <a class="btn btn-primary btn-lg" href="/register" role="button">Register Now</a>
+            <a class="btn btn-secondary btn-lg" href="/login" role="button">Login</a>
+        <% } %>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Manage Your Account</h2>
+            <p>Effortlessly view your balance, transactions, and more.</p>
+        </div>
+        <div class="col-md-4">
+            <h2>Transfer Funds</h2>
+            <p>Secure and fast money transfer services at your fingertips.</p>
+        </div>
+        <div class="col-md-4">
+            <h2>Customer Support</h2>
+            <p>Our team is here to help you with any queries or issues.</p>
+        </div>
+    </div>
